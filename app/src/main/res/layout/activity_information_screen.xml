@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    tools:context=".InformationScreen">
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip6"
+        android:layout_width="434dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="-12dp"
+        android:background="#311268"
+        android:clickable="false"
+        app:chipBackgroundColor="@color/light_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.015" />
+
+    <ImageButton
+        android:id="@+id/homeButton2"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/homeiconnn"
+        android:onClick="SwitchtoHome"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/homeiconnn" />
+
+    <ImageButton
+        android:id="@+id/newsButton2"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="148dp"
+        android:background="@drawable/newsiconnn"
+        android:onClick="SwitchtoNews"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/newsiconnn" />
+
+    <ImageButton
+        android:id="@+id/informationButton2"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="292dp"
+        android:background="@drawable/informationiconnn"
+        android:onClick="SwitchtoInfo"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/informationiconnn" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="368dp"
+        android:layout_height="351dp"
+        android:text="A project created by Joshua and Arnav for the Young Youth Innovators Fall 2023 Hackathon"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.189" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="283dp"
+        android:layout_height="184dp"
+        android:text="Intended to raise awareness about diabetes and its effects"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.793" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

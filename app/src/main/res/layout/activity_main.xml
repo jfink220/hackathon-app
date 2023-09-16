@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#40166A"
+    tools:context=".MainActivity" >
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip5"
+        android:layout_width="434dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="-12dp"
+        android:background="#311268"
+        app:chipBackgroundColor="#201632"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.015" />
+
+    <ImageButton
+        android:id="@+id/NewsButton"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="148dp"
+        android:background="@drawable/newsiconnn"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/newsiconnn" />
+
+    <ImageButton
+        android:id="@+id/InformationButton"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="292dp"
+        android:background="@drawable/informationiconnn"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/informationiconnn" />
+
+    <ImageButton
+        android:id="@+id/HomeButton"
+        android:onClick="SwitchtoHome"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/homeiconnn"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/homeiconnn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#40166A"
+    tools:context=".MainActivity" >
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip5"
+        android:layout_width="434dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="-12dp"
+        android:background="#311268"
+        android:clickable="false"
+        app:chipBackgroundColor="@color/light_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.015" />
+
+    <ImageButton
+        android:id="@+id/NewsButton"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="148dp"
+        android:background="@drawable/newsiconnn"
+        android:onClick="SwitchtoNews"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995"
+        app:srcCompat="@drawable/newsiconnn" />
+
+    <ImageButton
+        android:id="@+id/InformationButton"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="292dp"
+        android:background="@drawable/informationiconnn"
+        android:scaleType="fitXY"
+        android:onClick="SwitchtoInfo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/informationiconnn" />
+
+    <ImageButton
+        android:id="@+id/HomeButton"
+        android:onClick="SwitchtoHome"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/homeiconnn"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/homeiconnn" />-
+
+    <ScrollView
+
+        android:layout_width="412dp"
+        android:layout_height="617dp"
+        android:layout_marginTop="-120dp"
+        app:layout_constraintBottom_toBottomOf="@+id/chip5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/NewsImg1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerInside"
+                android:onClick="openURL"
+                android:src="@drawable/questionmark"></ImageButton>
+
+            <TextView
+                android:id="@+id/NewsText1"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Loading . . ."
+                android:textAlignment="center"
+                android:textColor="#FBF6F6"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:autoSizeTextType="uniform"></TextView>
+
+            <ImageButton
+                android:id="@+id/NewsImg2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerInside"
+                android:onClick="openURL"
+                android:src="@drawable/questionmark"></ImageButton>
+
+            <TextView
+                android:id="@+id/NewsText2"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Loading . . ."
+                android:textAlignment="center"
+                android:textColor="#FBF6F6"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:autoSizeTextType="uniform"></TextView>
+
+            <ImageButton
+                android:id="@+id/NewsImg3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerInside"
+                android:onClick="openURL"
+                android:src="@drawable/questionmark"></ImageButton>
+
+            <TextView
+                android:id="@+id/NewsText3"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Loading . . ."
+                android:textAlignment="center"
+                android:textColor="#FBF6F6"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:autoSizeTextType="uniform"></TextView>
+
+            <ImageButton
+                android:id="@+id/NewsImg4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerInside"
+                android:onClick="openURL"
+                android:src="@drawable/questionmark"></ImageButton>
+
+            <TextView
+                android:id="@+id/NewsText4"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Loading . . ."
+                android:textAlignment="center"
+                android:textColor="#FBF6F6"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:autoSizeTextType="uniform"></TextView>
+
+            <ImageButton
+                android:id="@+id/NewsImg5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerInside"
+                android:onClick="openURL"
+                android:src="@drawable/questionmark"></ImageButton>
+
+            <TextView
+                android:id="@+id/NewsText5"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Loading . . ."
+                android:textAlignment="center"
+                android:textColor="#FBF6F6"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:autoSizeTextType="uniform"></TextView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

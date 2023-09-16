@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen"
+    android:background="@color/light_pink">
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip4"
+        android:layout_width="434dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="-12dp"
+        android:background="#311268"
+        android:clickable="false"
+        app:chipBackgroundColor="@color/light_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.015" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/homeiconnn"
+        android:onClick="SwitchtoHome"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/homeiconnn" />
+
+    <ImageButton
+        android:id="@+id/newsButton"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="148dp"
+        android:background="@drawable/newsiconnn"
+        android:onClick="SwitchtoNews"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/newsiconnn" />
+
+    <ImageButton
+        android:id="@+id/informationButton"
+        android:layout_width="112dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="292dp"
+        android:background="@drawable/informationiconnn"
+        android:onClick="SwitchtoInfo"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/informationiconnn" />
+
+
+
+    <ScrollView
+
+        android:layout_width="412dp"
+        android:layout_height="617dp"
+        android:layout_marginTop="-120dp"
+        app:layout_constraintBottom_toBottomOf="@id/chip4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="375dp"
+            android:layout_height="560dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Diabetes is a chronic medical condition that affects how your body processes glucose (sugar), a crucial source of energy for your cells. It results in high levels of blood glucose, which can lead to various health complications if not properly managed.\n
+    \nThere are primarily two main types of diabetes:\n\nType 1 Diabetes: This is an autoimmune condition where the immune system mistakenly attacks and destroys the insulin-producing beta cells in the pancreas. As a result, the body cannot produce insulin, a hormone necessary to regulate blood sugar. People with this type must take insulin through injections or an insulin pump to survive. It usually develops in childhood or early adulthood.
+
+\n\nType 2 Diabetes: This is the most common form of diabetes and typically occurs in adulthood, although it is increasingly being diagnosed in younger individuals due to lifestyle factors. In this type, the body either doesn't produce enough insulin or becomes resistant to its effects. Lifestyle modifications, oral medications, and sometimes insulin injections are used to manage blood sugar levels.\n
+\nCommon symptoms of diabetes include excessive thirst, frequent urination, unexplained weight loss, fatigue, and blurred vision. If left untreated or poorly managed, diabetes can lead to serious complications such as heart disease, kidney disease, nerve damage, and vision problems.\n
+\nEffective management of diabetes typically involves a combination of factors, including monitoring blood sugar levels, adopting a healthy diet, engaging in regular physical activity, taking prescribed medications or insulin as needed, and making necessary lifestyle adjustments. It's essential for individuals with diabetes to work closely with professionals to create a plan and maintain blood sugar control to reduce the risk of complications and improve their quality of life.
+"
+
+
+            app:layout_constraintBottom_toTopOf="@+id/chip4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
